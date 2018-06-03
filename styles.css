@@ -1,0 +1,82 @@
+/* CSS is mostly copied from wes bos' javascript30 course. 
+   Some colors are changed, different font, and different margins on li > span elements */
+html {
+    box-sizing: border-box;
+    background:#BEE5FD;
+    font-family:'Coming Soon', cursive;
+    font-size: 20px;
+    font-weight: 200;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  h1 {
+      color: white;
+      text-align: center;
+  }
+  input {
+    width: 100%;
+    padding:20px;
+  }
+  em {
+      font-weight: bold;
+  }
+  .search-form {
+    max-width:400px;
+    margin:50px auto;
+  }
+
+  input.search {
+    margin: 0;
+    text-align: center;
+    outline:0;
+    border: 10px solid #F7F7F7;
+    width: 120%;
+    left: -10%;
+    position: relative;
+    top: 10px;
+    z-index: 2;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 40px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+  }
+
+
+  .suggestions {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .suggestions li {
+    background:white;
+    list-style: none;
+    border-bottom: 1px solid #D8D8D8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+    margin:0;
+    padding:20px;
+    transition:background 0.2s;
+    display:flex;
+    justify-content:space-between;
+    text-transform: capitalize;
+  }
+
+  .suggestions li:nth-child(even) {
+    transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+    background: #F8D3AC;
+  }
+
+  .suggestions li:nth-child(odd) {
+    transform: perspective(100px) rotateX(-3deg) translateY(3px);
+    background:#ffffff;
+  }
+
+  .info1 {
+      margin-right: 10%;
+  }
+  .info2 {
+      margin-left: 10%;
+  }
+  .hl {
+    background:#FFF874;
+  }
